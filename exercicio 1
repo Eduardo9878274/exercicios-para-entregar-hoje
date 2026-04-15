@@ -1,0 +1,27 @@
+total = 0
+dia = 1
+
+while dia <= 7:
+    print("Dia", dia)
+    qtd = int(input("Digite a quantidade:"))
+
+    total = total + qtd
+
+    if dia == 1:
+        maior = qtd
+        menor = qtd
+        dia_maior = dia
+        dia_menor = dia
+    else:
+        if qtd > maior:
+            maior = qtd
+            dia_maior = dia
+        if qtd < menor:
+            menor = qtd
+            dia_menor = dia
+
+    dia = dia + 1
+
+print("Total da semana:", total)
+print("Maior colheita:", maior, "no dia", dia_maior)
+print("Menor colheita:", menor, "no dia", dia_menor)
